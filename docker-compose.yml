@@ -1,0 +1,34 @@
+# fastapi
+version: '3.3'
+services:
+  web:
+  #  ค้นหา/ดึงชื่อในเครื่องว่ามีมั้ย ถ้าไม่มีจะดึงจากเน็ต
+    image: chattaporn/fastapi:v2
+    container_name: fastapi-application
+    environment:
+      - 8000
+    restart: "no"
+    networks:
+      - webproxy
+# ที่เก็บข้อมูล เก็บไว้ใน json-file
+    logging: 
+      driver: json-file
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.docker.network=webproxy
+        - traefik.enable=true
+        - traefik.http.routers.spcn07fastapi-https.entrypoints=websecure
+        - traefik.http.routers.spcn07fastapi-https.rule=Host("spcn07fastapi.xops.ipv9.me")
+        - traefik.http.routers.spcn07fastapi-https.tls.certresolver=default
+        - traefik.http.service.spcn07fastapi.loadbalancer.server.port=8000
+      resources:
+        reservations:
+          cpus: '0.1'
+          memory: 15M
+        limit:
+          cpus: '0.4'
+          memory: 150M
+networks:
+  webproxy:
+    external: true
