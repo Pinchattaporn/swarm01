@@ -110,7 +110,8 @@ Url django
 
             docker node update --label-add traefik-public.traefik-public-certificates=true $NODE_ID
 
-    ![label](images/label.png)
+    <center><img src="images/label.png" alt="center"></center>
+
 
     * ปรับเปลี่ยนข้อมูล traefik ก่อนที่จะ export
         
