@@ -18,7 +18,7 @@ Url django
  - [5.Create fastapi](#5create-fastapi)
 
  # 1.สร้างและใช้งาน Vm
-- สร้าง Vm เบื้องต้นได้ที่
+- สร้าง Vm เบื้องต้นดูได้ที่
    * https://github.com/Pinchattaporn/SPCN-011
    * Vm spec
         * Ubuntu 22.04
@@ -27,9 +27,9 @@ Url django
         * HDD 32 GB
 
 - เมื่อสร้าง Vm เสร็จแล้วทำการ clone ออกมา 3  Node ได้แก่
-    * mannger (spcn-manager)
-    * work1 (spcn-worker1)
-    * work2 (spcn-worker2)
+    * mannger (spcn07-manager)
+    * work1 (spcn07-worker1)
+    * work2 (spcn07-worker2)
 
 - ทำการ Set Hostname ใหม่ ด้วยคำสั่ง
     *  hostnamectl set-hostname " ชื่อชื่อใหม่ที่เราต้องการตั้ง"
