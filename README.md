@@ -6,7 +6,7 @@ Ref. awaresome-compose
 Wakatime project
 - https://wakatime.com/@spcn07/projects/wzcblnafge?start=2023-02-27&end=2023-03-05
 
-Url django
+Url fastapi
 - https://spcn07fastapi.xops.ipv9.xyz/
 
 
