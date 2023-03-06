@@ -211,7 +211,7 @@ Url django
 
 - แก้ไขข้อมูล docker-compose.yaml
 
-    <center><img src="images/set-compose.png" alt="center"></center>
+    <center><img src="images/Cap-code.png" alt="center"></center>
 
 - deploy stack 
      
@@ -224,7 +224,7 @@ Url django
 
     <center><img src="images/Create.png" alt="center"></center>
 
-    <center><img src="images/ed.png" alt="center"></center>
+    <center><img src="images/stack2.png" alt="center"></center>
 
 * ผลลัพธ์จากการ deploy stack
 
