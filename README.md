@@ -170,15 +170,12 @@ Url fastapi
   
     - https://github.com/docker/awesome-compose/tree/master/fastapi
 
-  
   ![folder](images/folder.png)
   ![infolder](images/in%20folder.png)
 
 - ทำการแก้ไขข้อมูลไฟล์ main.py
 
-
 <center><img src="images/main.png"></center>
-
 
   - โดยเข้าไปที่ app -> main.py -> แก้ไขข้อความตรง message: สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม
 
