@@ -177,22 +177,19 @@ Url fastapi
 - ทำการแก้ไขข้อมูลไฟล์ main.py
 
 
-<center><img src="images/main.png" alt="center"></center>
+<center><img src="images/main.png"></center>
 
 
-    -         โดยเข้าไปที่ app -> main.py -> แก้ไขข้อความตรง message: สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม
+  - โดยเข้าไปที่ app -> main.py -> แก้ไขข้อความตรง message: สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม
 
-<center><img src="images/set.png" alt="center"></center>
-
+<center><img src="images/set.png"></center>
 
 - build images 
 
-        โดยการเข้าที่ Docker hub -> Create repository -> ตั้ง Name = fastapi
+  - โดยการเข้าที่ Docker hub -> Create repository -> ตั้ง Name = fastapi
 
-
-    <center><img src="images/build.png" alt="center"></center>
-
-    <center><img src="images/finish.png" alt="center"></center>
+<center><img src="images/build.png" alt="center"></center>
+<center><img src="images/finish.png" alt="center"></center>
 
 - copy path:  chattaporn/fastapi
 
@@ -203,11 +200,11 @@ Url fastapi
     * ใช้คำสั่ง docker login เพื่อเข้าสู่ระบบก่อน
     * ใช้คำสั่ง docker push chattaporn/fastapi
 
-      <center><img src="images/8023.png" alt="center"></center>
+<center><img src="images/8023.png" alt="center"></center>
     
     * ผลลัพธ์จากรัน
       
-    <center><img src="images/images-hub.png" alt="center"></center>
+<center><img src="images/images-hub.png" alt="center"></center>
 
 - แก้ไขข้อมูล docker-compose.yaml
 
