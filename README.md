@@ -177,12 +177,12 @@ Url fastapi
 - ทำการแก้ไขข้อมูลไฟล์ main.py
 
 
-    <center><img src="images/main.png" alt="center"></center>
+<center><img src="images/main.png" alt="center"></center>
 
 
     -         โดยเข้าไปที่ app -> main.py -> แก้ไขข้อความตรง message: สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม
 
-    <center><img src="images/set.png" alt="center"></center>
+<center><img src="images/set.png" alt="center"></center>
 
 
 - build images 
