@@ -48,6 +48,65 @@ def hello_world():
 
 
 # **2.Images On Dockerfile**
+- สร้างไฟล์ main.py
+<details>
+<summary>Show code</summary>
+
+```ruby
+from fastapi import Fastapi
+
+app = Fastapi
+
+@app.get("/")
+def hello_world():
+    return {"message": "สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม"} #แสดงข้อความที่เราต้องการ
+```
+</details>
+
+- สร้างไฟล์ requirements.txt in /app
+<details>
+<summary>Show code</summary>
+
+```ruby
+ffastapi
+uvicorn
+```
+</details>
+
+- สร้าง Dockerfile in /app
+<details>
+<summary>Show code</summary>
+
+```ruby
+# syntax = docker/dockerfile:1.4
+
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9-slim AS builder
+
+WORKDIR /app
+
+COPY requirements.txt ./
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r requirements.txt
+
+COPY ./app ./app
+
+FROM builder as dev-envs
+
+RUN <<EOF
+apt-get update
+apt-get install -y --no-install-recommends git
+EOF
+
+RUN <<EOF
+useradd -s /bin/bash -m vscode
+groupadd docker
+usermod -aG docker vscode
+EOF
+# install Docker tools (cli, buildx, compose)
+COPY --from=gloursdocker/docker / /
+```
+</details>
+
 
 - โดยการเข้าที่ Docker hub -> Create repository -> ตั้ง Name = fastapi
 
