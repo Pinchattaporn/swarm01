@@ -29,21 +29,7 @@ Url fastapi
 
   ![folder](images/folder.png)
   ![infolder](images/in%20folder.png)
-
-- ทำการแก้ไขข้อมูลไฟล์ main.py
-<details>
-<summary>Show code</summary>
-
-```ruby
-from fastapi import Fastapi
-
-app = Fastapi
-
-@app.get("/")
-def hello_world():
-    return {"message": "สวัสดีค่ะหนูชื่อ ฉัตรพร แก้วเฉลิม"} #แสดงข้อความที่เราต้องการ
-```
-</details>
+  
 
 
 
