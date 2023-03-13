@@ -172,7 +172,7 @@ external: true
 
     <center><img src="images/Adfast.png" alt="center"></center>
 
-# **5.เช็คการเข้าใช้งาน Url.\**
+# **5.เช็คการเข้าใช้งาน Url.**
 
 - เช็คว่า Url เข้าใช้งานได้จริงมั้ย แสดงผลจริงมั้ย
 
